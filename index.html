@@ -15,8 +15,76 @@
             }
 
             main {
+                background-color: #faa1ff;
+                color: #ffffa1;
+
+            main {
                 background-color: #ffb4f1;
                 color: #f9f76f;
+            }
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+            p {
+                font-weight: bold;
+            }
+
+            .artigo-autor {
+                font-weight: bold;
+            }
+
+            </style> 
+</head>
+
+<body>
+    <header>
+        <h1>Meu blog tech</h1>
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+       <button>❤️<span>0</span></button>
+       <button>​🌺​​​<span>0</span></button>
+       
+            </header>
+            <main>
+                <section>
+                    <img src="imagem blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p>Por: Karine Miranda</p>
+                <p>Boas-vindas ao meu novo blog ! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+             <button>❤️<span>0</span></button>
+       <button>​🌺​​​<span>0</span></button>
+        </section>
+           <section>
+                    <img src="imagem blog.png" alt="livro com símbolos de tecnologia">
+                <h2>Meu primeiro post</h2>
+                <p>Por: Karine Miranda</p>
+                <p>Boas-vindas ao meu novo blog ! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+             <button>❤️<span>0</span></button>
+       <button>​🌺​​​<span>0</span></button>
+        </section>
+            </main>
+            <script>
+ const botoes = document.querySelectorAll("button");
+ botoes.forEach(function (botao) {
+        let curtiu = false;
+        botao.addEventListener("click", botaoClicado);
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            if (curtiu === false){
+                texto.textContent++;
+                curtiu = true;
+            } else{
+                texto.textContent--;
+                curtiu = false;
+            }
+        }
+    })
+     </script>
+        </body>
+        </html>
             }
 
             img {
