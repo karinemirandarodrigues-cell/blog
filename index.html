@@ -65,24 +65,7 @@
        <button>​🌺​​​<span>0</span></button>
         </section>
             </main>
-            <script>
- const botoes = document.querySelectorAll("button");
- botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botaoClicado);
-        function botaoClicado() {
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            if (curtiu === false){
-                texto.textContent++;
-                curtiu = true;
-            } else{
-                texto.textContent--;
-                curtiu = false;
-            }
-        }
-    })
-     </script>
+            
         </body>
         </html>
             }
@@ -129,7 +112,38 @@
        <button>​🌺​​​<span>0</span></button>
         </section>
             </main>
-            <script>
+            <footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+</footer>
+
+
+Antes da tag </style> insira o comando para estilizar o rodapé:
+
+
+
+ footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+<footer>
+        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+</footer>
+
+
+Antes da tag </style> insira o comando para estilizar o rodapé:
+
+
+
+ footer {
+            background-color: #183C63;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+         <script>
  const botoes = document.querySelectorAll("button");
  botoes.forEach(function (botao) {
         let curtiu = false;
@@ -145,7 +159,7 @@
                 curtiu = false;
             }
         }
-    })
-     </script>
+    })  
+    </script>
         </body>
         </html>
